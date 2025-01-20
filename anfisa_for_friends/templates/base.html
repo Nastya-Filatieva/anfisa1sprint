@@ -4,7 +4,9 @@
   <head>
     <link rel="icon" href="{% static 'img/fav/fav.ico' %}" type="image">
     <title>
-      {% block title %}{% endblock %}
+      {% block title %}
+        Анфиса для друзей. О проекте
+      {% endblock %}
     </title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
   </head>
@@ -12,6 +14,10 @@
     {% include "includes/header.html" %}
     <main>
       {% block content %}
+        <h1 class="pb-2 mb-0">О проекте</h1>
+          <p>
+          Каталог экзотических сортов мороженого.
+          </p>
       {% endblock %}
     </main>
     {% include "includes/footer.html" %}   
